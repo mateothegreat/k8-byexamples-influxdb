@@ -42,3 +42,10 @@ spec:
           name: http-api
         - containerPort: 8088
           name: rpc
+        volumeMounts:
+          - name: influxdb-persistent-storage
+            mountPath: /var/lib/influxdb
+      volumes:
+      - name: influxdb-persistent-storage
+        persistentVolumeClaim:
+          claimName: influxdb-persistent-storage
