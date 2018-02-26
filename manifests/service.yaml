@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: influxdb
   labels:
-    server: influxdb
+    app: influxdb
 spec:
   type: NodePort
   selector:
-    server: influxdb
+    app: influxdb
   ports:
   - name: http-ui
     port: 8083

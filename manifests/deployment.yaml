@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: influxdb
   labels:
-    server: influxdb
+    app: influxdb
 spec:
   replicas: 1
   selector:
     matchLabels:
-     server: influxdb
+     app: influxdb
   template:
     metadata:
       labels:
-        server: influxdb
+        app: influxdb
     spec:
       containers:
       - name: influxdb

@@ -8,6 +8,7 @@
 include .make/Makefile.inc
 
 NS              ?= default
+APP             ?= influxdb
 SERVICE_NAME    ?= kubernetes-dashboard
 SERVICE_PORT    ?= 80
 export
