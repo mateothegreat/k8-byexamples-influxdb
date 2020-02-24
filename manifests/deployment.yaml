@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: influxdb
-        image: influxdb:1.5-alpine
+        image: influxdb:1.7.9-alpine
         env:
         - name: INFLUXDB_DB
           value: "monitoring"
