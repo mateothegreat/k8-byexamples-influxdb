@@ -14,3 +14,7 @@
 # Influxdb
 
 > k8 by example -- straight to the point, simple execution.
+
+# See also
+
+* https://hub.docker.com/_/influxdb
